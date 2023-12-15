@@ -1,4 +1,4 @@
-const randomNumber=parseInt(Math.random()*100+1);
+let randomNumber=parseInt(Math.random()*100+1);
 
 const submit=document.querySelector('#subt');
 const userInput=document.querySelector('#guessField');
@@ -78,7 +78,7 @@ function endGame(){
     p.innerHTML=`<h2 id="newGame>Start New Game</h2>`;
     startOver.appendChild(p);
     playGame=false;
-    newGame();
+    startGame();
 }
 
 function startGame(){
