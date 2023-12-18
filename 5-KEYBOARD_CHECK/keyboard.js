@@ -1,4 +1,4 @@
-const insert=document.querySelector('#element')
+const insert=document.querySelector('#insert')
 
 window.addEventListener('keydown',(e)=>{
 insert.innerHTML=
@@ -7,15 +7,15 @@ insert.innerHTML=
 <table>
   <tr>
     <th>key</th>
-    <th>Keycode</th>
+    <th>keycode</th>
     <th>code</th>
   </tr>
   <tr>
-    <td>${e.key ===' '? 'Space':e.key}</td>
+    <td>${e.key ===' ' ? 'Space':e.key}</td>
     <td>${e.keyCode}</td>
     <td>${e.code}</td>
   </tr>
 </table>
 </div>
-`
-})
+`;
+});
