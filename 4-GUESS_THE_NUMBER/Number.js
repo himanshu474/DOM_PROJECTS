@@ -51,10 +51,10 @@ function checkGuess(guess){
         displayMessage('You guessed it right')
         endGame()
     }
-    else if(guess>randomNumber){
+    else if(guess<randomNumber){
      displayMessage('Number is TOO low')
     }
-    else if(guess<randomNumber){
+    else if(guess>randomNumber){
         displayMessage('Number is TOO High')
     }
 }
@@ -75,7 +75,7 @@ function endGame(){
     userInput.value='';
     userInput.setAttribute('disabled', '');
     p.classList.add('button');
-    p.innerHTML=`<h2 id="newGame>Start New Game</h2>`;
+    p.innerHTML=`<h2 id="newGame">Start New Game</h2>`;
     startOver.appendChild(p);
     playGame=false;
     startGame();
@@ -88,7 +88,7 @@ function startGame(){
         prevGuess=[];
         numGuess=1;
         guessSlot.innerHTML=''
-        remaining.innerHTML=`{11- numGuess}`;
+        remaining.innerHTML=`${11- numGuess}`;
         userInput.removeAttribute('disabled')
         startOver.removeChild(p)
         playGame=true;
