@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:darkcyan;
+    color:aliceblue;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin:0;
+    font-family: sans-serif;
+}
+
+.content{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100px;
+}
+
+.content img{
+    object-fit: cover;
+    margin:10px;
+    height:400px;
+    width:100%;
+}
+
+button{
+    padding:10px 30px;
+    font-size:22px;
+    background-color: transparent;
+    color:aquamarine;
+    border:2px white solid;
+}
+
+button:hover{
+    color:black;
+    background-color: aquamarine;
+    cursor:pointer;
+}
